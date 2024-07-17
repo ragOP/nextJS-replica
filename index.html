@@ -1628,7 +1628,7 @@
         }
         .m1 {
           left: 39px;
-          width: 337px;
+          width: 700px;
           height: 182px;
           transform-origin: -39px -342px;
           top: 342px;
@@ -1659,7 +1659,7 @@
           font-family: "PT Serif", serif;
         }
         .m8 {
-          color: rgb(255, 255, 255);
+          color: rgb(0, 0, 0);
         }
         .m9 {
           color: rgb(250, 204, 21);
@@ -1744,7 +1744,7 @@
           line-height: 18px;
         }
         .m27 {
-          left: 13px;
+          left: 113px;
           width: 456px;
           height: 104px;
           transform-origin: -13px -18px;
@@ -3748,7 +3748,7 @@
         bottom: 10px;
         left: 10px;
         right: 10px;
-        white-space: pre-wrap;
+        /* white-space: pre-wrap; */
         word-wrap: break-word;
       }
       .te-scope h1,
@@ -3981,7 +3981,7 @@
       }
       @media only screen and (max-width: 959px) {
         .cvt-1568371626-main-page-background {
-          background-color: rgb(0, 0, 0);
+          background-color: rgb(255, 255, 255);
           background-repeat: no-repeat;
           background-position: center top;
           background-size: cover;
@@ -4854,9 +4854,10 @@
     <!-- End Google Tag Manager -->
     <div id="modal-checkout"></div>
     <div class="cvt-1568371626-main-page-background"></div>
-    <div class="main-page page-section funnel-entry-page">
+    <div >
       <div
-        class="cvt-1568371626-box d0 d1 m0"
+        class="cvt-1568371626-box d0 d1 m0 " 
+        style="margin-left: 40px; margin-top: 20px;"
         id="boxc77454e0-9120-53d1-2739-a2e2e33918aa"
       >
         <div
@@ -4870,46 +4871,87 @@
           alt=""
         />
       </div>
-      <div class="cvt-1568371626-box d2 d3 m1" id="box1863ff6f-7a8a-10e4-e899-7b142f9d157b">
-        <div class="cvt-1568371626-element-body lazy-bg no-lazy-bg-mobile c0 c1 c2 c8">
-            <div class="te-scope te-scope-desktop d4 m2">
-                <p class="d5 d6 d7 m3 m4 m5">
-                    <span class="d8 d9 d10 m6 m7 m8" id="question">ARE YOU </span><span class="d8 d9 d11 m6 m7 m9" id="age-question">OVER 65?</span>
-                </p>
-            </div>
+      <div
+        class="cvt-1568371626-box d2 d3 m1"
+        id="box1863ff6f-7a8a-10e4-e899-7b142f9d157b"
+      >
+        <div
+          class="cvt-1568371626-element-body lazy-bg no-lazy-bg-mobile c0 c1 c2 c8"
+        >
+        
+          <div class="te-scope te-scope-desktop d4 m2"
+          style="margin-left: 20px; margin-top: 30px;"
+          >
+            <p class="d5 d6 d7 m3 m4 m5" >
+              <span class="d8 d9 d10 m6 m7 m8" id="question">ARE YOU </span
+              >
+              <span 
+              
+              class="d8 d9 d11 m6 m7 m9" id="age-question"
+                >OVER 65?</span
+              >
+            </p>
+          </div>
         </div>
-    </div>
-    <div class="cvt-1568371626-box d12 d13 m10 m11" id="boxee57c9b7-5e8b-c159-4744-fbef05481039">
-        <button class="cvt-1568371626-element-body lazy-bg no-lazy-bg-mobile c0 c3 c4 c8 d14 m12 button-skin-default" type="button" name="" tabindex="1" id="yes-button">
-            <div class="">YES</div>
+      </div>
+      <div
+        class="cvt-1568371626-box d12 d13 m10 m11"
+        id="boxee57c9b7-5e8b-c159-4744-fbef05481039"
+    
+      >
+        <button
+          class="cvt-1568371626-element-body lazy-bg no-lazy-bg-mobile c0 c3 c4 c8 d14 m12 button-skin-default"
+          type="button"
+          name=""
+          tabindex="1"
+          id="yes-button"
+          style="margin-left: 80px; margin-top: 20px;"
+        >
+          <div class="">YES</div>
         </button>
-    </div>
-    <div class="cvt-1568371626-box d13 d15 m11 m13" id="box914978a1-0859-1565-9905-cc00cbb7a6b5">
-        <button class="cvt-1568371626-element-body lazy-bg no-lazy-bg-mobile c0 c3 c5 c8 d14 m12 button-skin-default" type="button" name="" tabindex="2" id="no-button">
-            <div class="">NO</div>
+      </div>
+      <div
+        class="cvt-1568371626-box d13 d15 m11 m13"
+        id="box914978a1-0859-1565-9905-cc00cbb7a6b5"
+      >
+        <button
+          class="cvt-1568371626-element-body lazy-bg no-lazy-bg-mobile c0 c3 c5 c8 d14 m12 button-skin-default"
+          type="button"
+          name=""
+          tabindex="2"
+          id="no-button"
+          style="margin-left: 120px; margin-top: 20px;"
+        >
+          <div class="">NO</div>
         </button>
-    </div>
+      </div>
 
-    <script>
+      <script>
         let isFirstQuestion = true;
 
-        document.getElementById('yes-button').addEventListener('click', handleButtonClick);
-        document.getElementById('no-button').addEventListener('click', handleButtonClick);
+        document
+          .getElementById("yes-button")
+          .addEventListener("click", handleButtonClick);
+        document
+          .getElementById("no-button")
+          .addEventListener("click", handleButtonClick);
 
         function handleButtonClick() {
-            if (isFirstQuestion) {
-                changeQuestion();
-                isFirstQuestion = false;
-            } else {
-                window.location.href = 'congo.html';
-            }
+          if (isFirstQuestion) {
+            changeQuestion();
+            isFirstQuestion = false;
+          } else {
+            window.location.href = "congo.html";
+          }
         }
 
         function changeQuestion() {
-            document.getElementById('question').textContent = 'Do you live in the';
-            document.getElementById('age-question').textContent = 'United States?';
+          document.getElementById("question").textContent =
+            "Do you live in the";
+          document.getElementById("age-question").textContent =
+            "United States?";
         }
-    </script>
+      </script>
       <div
         class="cvt-1568371626-box d1 d16 m14"
         id="boxecb4556b-9089-62a6-38c3-a689456997da"
@@ -4917,6 +4959,7 @@
         <div
           class="cvt-1568371626-element-body lazy-bg c0 c1 c2 c8 lazy-bg no-lazy-bg-mobile"
           title=""
+          style="margin-left: 90px; margin-top: 40px;"
         ></div>
         <img
           class="cvt-1568371626-element-body c0 c1 c2 c8 cvt-1568371626-image-element lazy-bg no-lazy-bg-mobile"
@@ -4929,7 +4972,9 @@
         class="cvt-1568371626-box d3 d17 m15 m16"
         id="box1a7aabc1-9bea-fe7f-7d90-31f81532a3e6"
       >
-        <div class="cvt-1568371626-element-body lazy-bg c0 c1 c2 c8">
+        <div class="cvt-1568371626-element-body lazy-bg c0 c1 c2 c8"
+        style="margin-left: 100px; margin-top: 20px;"
+        >
           <div class="te-scope te-scope-desktop d4 m2">
             <p class="d5 d6 d18 m3 m4 m17">
               <span class="d8 d10 d19 m6 m8 m18"
